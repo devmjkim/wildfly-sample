@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 
 <server xmlns="urn:jboss:domain:4.2">
+    <!-- extensions -->
     <extensions>
         <extension module="org.jboss.as.clustering.infinispan"/>
         <extension module="org.jboss.as.connector"/>
@@ -29,6 +30,7 @@
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
     </extensions>
+    <!-- management -->
     <management>
         <security-realms>
             <security-realm name="ManagementRealm">
